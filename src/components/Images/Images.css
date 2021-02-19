@@ -1,0 +1,45 @@
+.ImagesDiv{
+    position: fixed;
+    z-index: 500;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+.Images{
+    height: 300px;
+    width: 97%;
+    max-width: 97%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+@media(max-width: 1282px) {
+    .Images{
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 1020px){
+    .ImagesDiv {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 480px){
+    .ImagesDiv {
+        left: 10%;
+        width: 76%;
+    }
+    .Images{
+        padding: 10px 0;
+    }
+  }

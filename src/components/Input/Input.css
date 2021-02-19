@@ -1,0 +1,202 @@
+.InputDivContainer {
+    animation: slideIn 1s ease-out 1s;
+}
+
+.InputDivContainer h1 {
+  text-shadow: 0 0 1px black;
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+
+.ContentDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  padding: 15px 20px 0 20px;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 4px gray;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.ContentDiv:hover{
+  transform: scale(1.05);
+  -webkit-box-shadow: 0 27px 47px -3px rgba(0,0,0,0.58);
+	-moz-box-shadow: 0 27px 47px -3px rgba(0,0,0,0.58);
+	box-shadow: 0 27px 20px -13px rgba(0,0,0,0.58);
+}
+
+.Divider{
+  margin: 43px auto 100px;
+  width: 97%;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+  transition: transform 0.2s ease-out; 
+}
+
+.ContentDiv:hover ~ .Divider{
+  transform: scaleX(0.5);
+}
+
+.TextDiv {
+  width: 47%;
+}
+
+.TextDiv h2 {
+  font-size: 27px;
+  letter-spacing: 2px;
+}
+
+.TextDiv p {
+  width: 100%;
+  color: #5e5e5e;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-size: 17px;
+  text-align: left;
+  padding: 10px;
+}
+
+.InputDiv {
+  height: 100%;
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=range] {
+  height: 45px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+  background: transparent;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #50555C;
+  background: #50555C;
+  border-radius: 14px;
+  border: 0px solid #000000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 2px solid #000000;
+  height: 37px;
+  width: 20px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -12.5px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #50555C;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #50555C;
+  background: #50555C;
+  border-radius: 14px;
+  border: 0px solid #000000;
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 2px solid #000000;
+  height: 37px;
+  width: 20px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #50555C;
+  border: 0px solid #000000;
+  border-radius: 28px;
+  box-shadow: 1px 1px 1px #50555C;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #50555C;
+  border: 0px solid #000000;
+  border-radius: 28px;
+  box-shadow: 1px 1px 1px #50555C;
+}
+
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 2px solid #000000;
+  height: 37px;
+  width: 20px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #50555C;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #50555C;
+}
+
+input[type=text]{
+  background: transparent;
+  width: 100px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  font-size: 40px;
+  border-right: 2px solid gray;
+  border-radius: 15px;
+}
+
+
+@media (max-width: 948px) {
+  .ContentDiv {
+    flex-direction: column;
+  }
+  .TextDiv {
+    width: 90%;
+  }
+  .InputDiv {
+    width: 90%;
+  }
+}
+
+@keyframes slideIn {
+  0%{
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+
+  100%{
+      opacity: 1;
+      transform: translateX(0);
+  }
+}

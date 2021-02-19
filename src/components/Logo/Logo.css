@@ -1,0 +1,37 @@
+.Logo {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+.Logo img {
+    height: 120px;
+    width: 150px;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 85px;
+}
+
+.LogoH1 {
+    font-family: 'Oxanium', cursive;
+    text-shadow: 0 0 2px rgba(150, 150, 150, 1);
+    margin: 0;
+    padding-top: 15px;
+    font-weight: 500;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+@media(max-width: 772px){
+    .LogoH1{
+        display: none;
+    }
+
+    .Logo img {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: auto;
+    }
+}

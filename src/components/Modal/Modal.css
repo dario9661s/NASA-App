@@ -1,0 +1,28 @@
+.Modal {
+    position: fixed;
+    z-index: 500;
+    height: 100vh;
+    background-color: transparent;
+    width: 100vh;
+    margin: 0;
+    top: 0;
+    left: 24%;
+}
+
+.Loader {
+    position: fixed;
+    z-index: 500;
+    height: 100vh;
+    background-color: transparent;
+    width: 90%;
+    margin: 0 auto;
+    top: 20%;
+    left: 5%;
+}
+
+
+@media(max-width: 1020px){
+    .Modal {
+        left: 12%;
+    }
+}
